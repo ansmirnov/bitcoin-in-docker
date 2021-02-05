@@ -5,6 +5,7 @@
 ** Contents                                                           :TOC_3:
   - [[#select-docker-image-version][Select docker image version]]
   - [[#docker-image-pull][Docker image pull]]
+  - [[#see-help][See help]]
 
 ** Select docker image version
 
@@ -17,5 +18,11 @@ TAG="0.20.1-alpine"
 
 #+BEGIN_SRC sh
 docker pull $IMAGE:$TAG
+#+END_SRC
+
+** See help
+
+#+BEGIN_SRC sh
+docker run --rm ruimarinho/bitcoin-core --help
 #+END_SRC
 
