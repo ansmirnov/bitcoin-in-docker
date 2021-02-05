@@ -1,0 +1,4 @@
+#+TITLE: Bitcoin in docker
+#+PROPERTY: header-args :session *shell bitcoin* :results silent raw
+#+OPTIONS: ^:nil
+
