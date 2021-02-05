@@ -6,6 +6,7 @@
   - [[#select-docker-image-version][Select docker image version]]
   - [[#docker-image-pull][Docker image pull]]
   - [[#see-help][See help]]
+  - [[#create-volume][Create volume]]
 
 ** Select docker image version
 
@@ -24,5 +25,11 @@ docker pull $IMAGE:$TAG
 
 #+BEGIN_SRC sh
 docker run --rm ruimarinho/bitcoin-core --help
+#+END_SRC
+
+** Create volume
+
+#+BEGIN_SRC sh
+docker volume create bitcoin-data
 #+END_SRC
 
