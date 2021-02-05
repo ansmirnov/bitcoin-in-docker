@@ -15,6 +15,7 @@
   - [[#test-connection][Test connection]]
   - [[#run-debug-shell][Run debug shell]]
   - [[#kill-container][Kill container]]
+  - [[#remove-container][Remove container]]
 
 ** Select docker image version
 
@@ -84,3 +85,8 @@ docker exec -u bitcoin -it bitcoin sh
 docker kill bitcoin
 #+END_SRC
 
+** Remove container
+
+#+BEGIN_SRC sh
+docker rm bitcoin
+#+END_SRC
