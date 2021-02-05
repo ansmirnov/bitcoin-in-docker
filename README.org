@@ -11,6 +11,7 @@
     - [[#run-bitcoind-in-regtest-mode][Run bitcoind in regtest mode]]
     - [[#run-pruned-node][Run pruned node]]
   - [[#see-logs][See logs]]
+  - [[#inspect-container][Inspect container]]
 
 ** Select docker image version
 
@@ -54,5 +55,11 @@ docker run --rm --name bitcoin --detach --mount source=bitcoin-data,target=/home
 
 #+BEGIN_SRC sh
 docker logs --tail 10 bitcoin
+#+END_SRC
+
+** Inspect container
+
+#+BEGIN_SRC sh
+docker inspect bitcoin
 #+END_SRC
 
