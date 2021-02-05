@@ -4,11 +4,18 @@
 
 ** Contents                                                           :TOC_3:
   - [[#select-docker-image-version][Select docker image version]]
+  - [[#docker-image-pull][Docker image pull]]
 
 ** Select docker image version
 
 #+BEGIN_SRC sh
 IMAGE="ruimarinho/bitcoin-core"
 TAG="0.20.1-alpine"
+#+END_SRC
+
+** Docker image pull
+
+#+BEGIN_SRC sh
+docker pull $IMAGE:$TAG
 #+END_SRC
 
