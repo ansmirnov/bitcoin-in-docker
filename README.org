@@ -14,6 +14,7 @@
   - [[#inspect-container][Inspect container]]
   - [[#test-connection][Test connection]]
   - [[#run-debug-shell][Run debug shell]]
+  - [[#kill-container][Kill container]]
 
 ** Select docker image version
 
@@ -75,5 +76,11 @@ docker exec -u bitcoin -it bitcoin bitcoin-cli getnetworkinfo
 
 #+BEGIN_SRC sh
 docker exec -u bitcoin -it bitcoin sh
+#+END_SRC
+
+** Kill container
+
+#+BEGIN_SRC sh
+docker kill bitcoin
 #+END_SRC
 
