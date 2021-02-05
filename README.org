@@ -12,6 +12,7 @@
     - [[#run-pruned-node][Run pruned node]]
   - [[#see-logs][See logs]]
   - [[#inspect-container][Inspect container]]
+  - [[#test-connection][Test connection]]
 
 ** Select docker image version
 
@@ -61,5 +62,11 @@ docker logs --tail 10 bitcoin
 
 #+BEGIN_SRC sh
 docker inspect bitcoin
+#+END_SRC
+
+** Test connection
+
+#+BEGIN_SRC sh
+docker exec -u bitcoin -it bitcoin bitcoin-cli getnetworkinfo
 #+END_SRC
 
