@@ -2,3 +2,13 @@
 #+PROPERTY: header-args :session *shell bitcoin* :results silent raw
 #+OPTIONS: ^:nil
 
+** Contents                                                           :TOC_3:
+  - [[#select-docker-image-version][Select docker image version]]
+
+** Select docker image version
+
+#+BEGIN_SRC sh
+IMAGE="ruimarinho/bitcoin-core"
+TAG="0.20.1-alpine"
+#+END_SRC
+
