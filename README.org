@@ -33,7 +33,7 @@ docker pull $IMAGE:$TAG
 ** See help
 
 #+BEGIN_SRC sh
-docker run --rm ruimarinho/bitcoin-core --help
+docker run --rm $IMAGE:$TAG --help
 #+END_SRC
 
 ** Create volume
@@ -46,13 +46,13 @@ docker volume create bitcoin-data
 *** Run bitcoind in regtest mode
 
 #+BEGIN_SRC sh
-docker run --rm --name bitcoin --detach --mount source=bitcoin-data,target=/home/bitcoin/.bitcoin ruimarinho/bitcoin-core -regtest
+docker run --rm --name bitcoin --detach --mount source=bitcoin-data,target=/home/bitcoin/.bitcoin $IMAGE:$TAG -regtest
 #+END_SRC
 
 *** Run pruned node
 
 #+BEGIN_SRC sh
-docker run --rm --name bitcoin --detach --mount source=bitcoin-data,target=/home/bitcoin/.bitcoin ruimarinho/bitcoin-core -prune=10000
+docker run --rm --name bitcoin --detach --mount source=bitcoin-data,target=/home/bitcoin/.bitcoin $IMAGE:$TAG -prune=10000
 #+END_SRC
 
 ** See logs
